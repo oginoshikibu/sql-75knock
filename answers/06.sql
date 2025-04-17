@@ -12,7 +12,7 @@ SELECT
                 g.player_id = p.id
             -- LIMIT
             --     1
-            -- なぜかこれを入れると動かない
+            -- なぜかこれを入れるとlinterに怒られる
         ) THEN 0
         ELSE (
             SELECT
