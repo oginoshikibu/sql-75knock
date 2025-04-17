@@ -1,9 +1,9 @@
 SELECT
-    *
+    group_name,
+    MAX(ranking),
+    MIN(ranking)
 FROM
     countries
-WHERE
-    ranking = (select MAX(ranking) FROM countries)
-    OR
-    ranking = (select MIN(ranking) FROM countries)
+GROUP BY
+group_name
 ;
