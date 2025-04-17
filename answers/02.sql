@@ -1,5 +1,4 @@
 SELECT
-    position,
     AVG(height),
     AVG(weight)
 FROM
