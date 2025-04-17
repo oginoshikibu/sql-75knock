@@ -6,3 +6,5 @@ from
     INNER JOIN players p ON c.id = p.country_id
 GROUP BY
     c.id
+ORDER BY
+    avg_height DESC
