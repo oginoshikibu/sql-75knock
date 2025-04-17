@@ -1,5 +1,5 @@
 select
-    c.id,
+    MAX(c.name) name,
     AVG(height) avg_height
 from
     countries c
