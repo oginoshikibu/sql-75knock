@@ -5,5 +5,3 @@ FROM
     players
 WHERE
     position = "GK"
-GROUP BY
-    position
